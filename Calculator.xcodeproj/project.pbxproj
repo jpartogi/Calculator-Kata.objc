@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8C08162F1E8439DF00F67B39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C08162E1E8439DF00F67B39 /* main.m */; };
+		8C8B01FC1E8527D90000049D /* CalculatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8B01FB1E8527D90000049D /* CalculatorTest.m */; };
+		8C8B01FF1E8528EC0000049D /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8B01FE1E8528EC0000049D /* Calculator.m */; };
+		8C8B02011E852F030000049D /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8B01FE1E8528EC0000049D /* Calculator.m */; };
+		8C8B02021E852F030000049D /* Calculator.h in Sources */ = {isa = PBXBuildFile; fileRef = 8C8B02001E852A230000049D /* Calculator.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,11 +27,22 @@
 
 /* Begin PBXFileReference section */
 		8C08162B1E8439DF00F67B39 /* Calculator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Calculator; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C08162E1E8439DF00F67B39 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8C0816391E843A9F00F67B39 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C08163D1E843A9F00F67B39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C8B01FB1E8527D90000049D /* CalculatorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorTest.m; sourceTree = "<group>"; };
+		8C8B01FE1E8528EC0000049D /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
+		8C8B02001E852A230000049D /* Calculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		8C0816281E8439DF00F67B39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C0816361E843A9F00F67B39 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				8C08162D1E8439DF00F67B39 /* Calculator */,
+				8C08163A1E843A9F00F67B39 /* Tests */,
 				8C08162C1E8439DF00F67B39 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				8C08162B1E8439DF00F67B39 /* Calculator */,
+				8C0816391E843A9F00F67B39 /* Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,9 +73,19 @@
 		8C08162D1E8439DF00F67B39 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				8C08162E1E8439DF00F67B39 /* main.m */,
+				8C8B01FE1E8528EC0000049D /* Calculator.m */,
+				8C8B02001E852A230000049D /* Calculator.h */,
 			);
 			path = Calculator;
+			sourceTree = "<group>";
+		};
+		8C08163A1E843A9F00F67B39 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8C08163D1E843A9F00F67B39 /* Info.plist */,
+				8C8B01FB1E8527D90000049D /* CalculatorTest.m */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +108,23 @@
 			productReference = 8C08162B1E8439DF00F67B39 /* Calculator */;
 			productType = "com.apple.product-type.tool";
 		};
+		8C0816381E843A9F00F67B39 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C08163E1E843A9F00F67B39 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				8C0816351E843A9F00F67B39 /* Sources */,
+				8C0816361E843A9F00F67B39 /* Frameworks */,
+				8C0816371E843A9F00F67B39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = 8C0816391E843A9F00F67B39 /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +135,10 @@
 				ORGANIZATIONNAME = "Joshua Partogi";
 				TargetAttributes = {
 					8C08162A1E8439DF00F67B39 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					8C0816381E843A9F00F67B39 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -110,16 +157,37 @@
 			projectRoot = "";
 			targets = (
 				8C08162A1E8439DF00F67B39 /* Calculator */,
+				8C0816381E843A9F00F67B39 /* Tests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C0816371E843A9F00F67B39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8C0816271E8439DF00F67B39 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C08162F1E8439DF00F67B39 /* main.m in Sources */,
+				8C8B01FF1E8528EC0000049D /* Calculator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C0816351E843A9F00F67B39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C8B02011E852F030000049D /* Calculator.m in Sources */,
+				8C8B02021E852F030000049D /* Calculator.h in Sources */,
+				8C8B01FC1E8527D90000049D /* CalculatorTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +295,28 @@
 			};
 			name = Release;
 		};
+		8C08163F1E843A9F00F67B39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = scrum.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8C0816401E843A9F00F67B39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = scrum.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -246,6 +336,16 @@
 				8C0816341E8439DF00F67B39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C08163E1E843A9F00F67B39 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C08163F1E843A9F00F67B39 /* Debug */,
+				8C0816401E843A9F00F67B39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
