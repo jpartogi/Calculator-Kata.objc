@@ -10,7 +10,6 @@
 		8C8B01FC1E8527D90000049D /* CalculatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8B01FB1E8527D90000049D /* CalculatorTest.m */; };
 		8C8B01FF1E8528EC0000049D /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8B01FE1E8528EC0000049D /* Calculator.m */; };
 		8C8B02011E852F030000049D /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8B01FE1E8528EC0000049D /* Calculator.m */; };
-		8C8B02021E852F030000049D /* Calculator.h in Sources */ = {isa = PBXBuildFile; fileRef = 8C8B02001E852A230000049D /* Calculator.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,10 +27,10 @@
 /* Begin PBXFileReference section */
 		8C08162B1E8439DF00F67B39 /* Calculator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Calculator; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C0816391E843A9F00F67B39 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C08163D1E843A9F00F67B39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C8B01FB1E8527D90000049D /* CalculatorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorTest.m; sourceTree = "<group>"; };
 		8C8B01FE1E8528EC0000049D /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 		8C8B02001E852A230000049D /* Calculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
+		8C8B02031E8554D00000049D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +81,7 @@
 		8C08163A1E843A9F00F67B39 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				8C08163D1E843A9F00F67B39 /* Info.plist */,
+				8C8B02031E8554D00000049D /* Info.plist */,
 				8C8B01FB1E8527D90000049D /* CalculatorTest.m */,
 			);
 			path = Tests;
@@ -186,7 +185,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C8B02011E852F030000049D /* Calculator.m in Sources */,
-				8C8B02021E852F030000049D /* Calculator.h in Sources */,
 				8C8B01FC1E8527D90000049D /* CalculatorTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
