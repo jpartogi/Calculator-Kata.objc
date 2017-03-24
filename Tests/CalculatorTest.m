@@ -29,7 +29,7 @@
     
     int result = [calc add: @"1"];
     
-    XCTAssertEqual(1, "1");
+    XCTAssertEqual(1, result);
 }
 
 @end
